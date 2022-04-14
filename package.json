@@ -1,0 +1,38 @@
+{
+  "name": "@boomsakalaka/tools",
+  "version": "1.0.0",
+  "description": "前端工具库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "copy package.json dist && copy README.md dist",
+    "build": "rollup -c && npm run copy",
+    "publish": "node scripts/publish.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boom-sakalaka/ktools.git"
+  },
+  "keywords": [
+    "toolkit",
+    "rollup",
+    "typescript"
+  ],
+  "author": "GZH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boom-sakalaka/ktools/issues"
+  },
+  "homepage": "https://github.com/boom-sakalaka/ktools#readme",
+  "browser": "dist/index.ts",
+  "devDependencies": {
+    "commander": "^9.1.0",
+    "rollup": "^2.70.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "shelljs": "^0.8.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
+  }
+}
